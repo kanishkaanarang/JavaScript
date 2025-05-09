@@ -1,15 +1,15 @@
 const marvelHero = ["thor","ironman","spiderman"]
 const dcHero = ["superman","flash","batman"]
-// marvelHero.push(dcHero)
-// console.log(marvelHero) //[ 'thor', 'ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
+marvelHero.push(dcHero)
+console.log(marvelHero) //[ 'thor', 'ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
 
-// //to fully merge
-// const allHero = marvelHero.concat(dcHero) //not in orginal array, returns a new array
-// console.log(allHero) 
+//to fully merge
+const allHero = marvelHero.concat(dcHero) //not in orginal array, returns a new array
+console.log(allHero) 
 
-// //easier: spread method 
-// const allNewHero = [...marvelHero, ...dcHero]
-// console.log(allNewHero)
+//easier: spread method 
+const allNewHero = [...marvelHero, ...dcHero]
+console.log(allNewHero)
 
 const aArray = [1,2,3, [4,5,6], 7, [6,7, [4,5]]]
 
