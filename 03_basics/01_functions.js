@@ -46,3 +46,30 @@ console.log(loginUserMessage("kanishka")) //kanishka just logged in
 console.log(loginUserMessage()) //undefined just logged in but when we use if loop then please enter a username
 
 // can give default value as well (username = "default")
+
+//shopping cart
+
+function calculateCartPrice (val1,val2,...num1){ //... is rest(here) but also spread 
+    return num1
+}
+
+console.log(calculateCartPrice(5,10,20)) //[ 20 ]
+
+const user = {
+    username:"kanishka",
+    age: 18
+}
+
+function handleObject(anyobject){
+    console.log(`user is ${anyobject.username} & age is ${anyobject.age}`)
+}
+
+handleObject(user)
+
+const myNewArray = [200,300,400,500]
+function returnSecVal (getArray){
+    return getArray[1]
+}
+
+console.log(returnSecVal([5,2,6,5,4]))//2
+console.log(returnSecVal(myNewArray)) //300
