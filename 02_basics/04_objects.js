@@ -66,3 +66,15 @@ console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty('name')) //true
 
+// destructuring :
+
+const course = {
+    courseName :"JavaScript",
+    price: "999",
+    courseInstructor :"Hitesh"
+}
+
+const {courseInstructor:CI} = course
+console.log(CI)
+
+
