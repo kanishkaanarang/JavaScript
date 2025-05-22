@@ -33,7 +33,7 @@ buttons.forEach(function (button) {
 ```
 
 ## Project 2
-```
+```javascript
 const form = document.querySelector('form')
 // this usecase will give you empty value
 // const height = parseInt(document.querySelector("#height").value)
@@ -64,4 +64,15 @@ form.addEventListener('submit',function(event){
     }
   }
 })
+```
+
+## Project 3:
+```javascript
+const clock = document.getElementById('clock')
+
+setInterval(function(){
+  let date = new Date()
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+},1000);
 ```
